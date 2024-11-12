@@ -90,7 +90,67 @@
 # else: print('Testsúlyosztályod: III. fokú (súlyos) elhízás')
 
 
+# 11. feladat (Zoldseges)
+
+# alma=435
+# szilva=659
+# szolo=819
+# print(f'alma:   {alma} ft/kg',f'szilva: {szilva} ft/kg',f'szőlő:  {szolo} ft/kg', sep='\n')
+# gyumolcs=input('Milyen gyümölcsöt szeretne vásárolni?  ')
+# if gyumolcs == 'alma':
+#     mennyiseg=float(input('Hány kg almát szeretne?  '))
+#     print(f'alma:   {alma} ft/kg',f'Vásárolt mennyiség: {mennyiseg} kg',f'A fizetendő összeg: {alma*mennyiseg:,} ft', sep='\n')
+# if gyumolcs == 'szilva':
+#     mennyiseg=float(input('Hány kg szilvát szeretne?  '))
+#     print(f'szilva: {szilva} ft/kg',f'Vásárolt mennyiség: {mennyiseg} kg',f'A fizetendő összeg: {szilva*mennyiseg:,} ft',sep='\n')
+# if gyumolcs == 'szőlő':
+#     mennyiseg=float(input('Hány kg szőlőt szeretne?  '))
+#     print(f'szőlő:  {szolo} ft/kg',f'Vásárolt mennyiség: {mennyiseg} kg',f'Fizetendő összeg: {szolo*mennyiseg:,} ft',sep='\n')
 
 
+# 12. feladat (Hordo)
+
+# hordo=int(input('Hány literes a hordó?  '))
+# kancso=int(input('Hány literes a kancsó?  '))
+# print(f'A hordóban {hordo // kancso} teli kancsónnyi víz van.', f'A hordóban {hordo - (hordo // kancso) * kancso} liter víz marad.', f'A horó és a kancsó térfogatának hányadosa: {hordo / kancso}', sep='\n')
+
+# 13. feladat (Bankjegy)
+
+# print('Bankautomata', end='\n\n')
+# print('Legkisebb címlet: 1000 FT, a maximálisan felvehető összeg: 300 000 Ft', end='\n\n')
+# felvetel=int(input('Adja meg, mekkora összeget kíván felvenni!  '))
+# print('')
+# if felvetel % 1000 == 0:
+#     print('A kiadott bankjegyek:', end='\n\n')
+#     print(f'{felvetel//10000} * 10 000 = {felvetel//10000*10000}')
+#     print(f' {(felvetel-(felvetel//10000*10000))//5000} *  5 000 =   {(felvetel-(felvetel//10000*10000))//5000*5000}')
+#     print(f' {(felvetel-(felvetel//10000*10000)-(felvetel-(felvetel//10000*10000))//5000*5000)//1000} *  1 000 =   {(felvetel-(felvetel//10000*10000)-(felvetel-(felvetel//10000*10000))//5000*5000)//1000*1000}')
+#     print('--------------------')
+#     print(f'Összeg:       {felvetel} Ft')
+# else:
+#     print('Csak 1000 Ft-tal osztható összeg vehető fel.')
 
 
+# 14. feladat (Uzemido)
+
+# ido=int(input('Kérem adja meg az eszköz üzemidejét másodpercben.  '))
+# print('Üzemidő: ')
+# print(f'{ido//86400} nap')
+# print(f'{(ido-(ido//86400*86400))//3600} óra')
+# print(f'{(ido-(ido//86400*86400)-(ido-(ido//86400*86400))//3600*3600)//60} perc')
+# print(f'{ido-(ido//86400*86400)-((ido-(ido//86400*86400))//3600*3600)-((ido-(ido//86400*86400)-(ido-(ido//86400*86400))//3600*3600)//60*60)} másodperc')
+
+# ido=int(input('Kérem adja meg az eszköz üzemidejét másodpercben.  '))
+# print(f'Üzemidő: {ido//86400} óra, {(ido-(ido//86400*86400))//3600} óra, {(ido-(ido//3600*3600))//60} perc, {ido-(ido//60*60)} másodperc.')
+
+
+# 15. feladat (Utazasiköltség)
+
+# print('Utazási költségtérítés', end='\n\n')
+# ut_hossz=float(input('Add meg a megtett utat km-ben!  '))
+# fogyasztas=float(input('Add meg az autó fogyasztását 100km-re literben!  '))
+# uzemanyag=float(input('Add meg az üzemanyagárat Ft-ban!  '))
+# if ut_hossz <=100:
+#     print(f'Költségtérítés: {(ut_hossz*fogyasztas*uzemanyag)/100} ft.')
+# else:
+#     print(f'Költségtérítés: {(ut_hossz*fogyasztas*uzemanyag)/100 + ut_hossz*25}')
